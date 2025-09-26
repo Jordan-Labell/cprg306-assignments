@@ -75,7 +75,7 @@ const item12 = {
 
 return (
     <main>
-        <div className="flex flex-wrap">
+        <div className="flex">
             <Item item={item1} />
             <Item item={item2} />
             <Item item={item3} />
