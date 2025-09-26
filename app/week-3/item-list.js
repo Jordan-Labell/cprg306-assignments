@@ -75,7 +75,7 @@ const item12 = {
 
 return (
     <main>
-        <div className="flex flex-col">
+        <div className="flex flex-col mx-auto">
             <Item item={item1} />
             <Item item={item2} />
             <Item item={item3} />
