@@ -74,7 +74,7 @@ const item12 = {
 };
 
 return (
-    <main className='mx-auto max-w-md'>
+    <main>
         <div className="flex flex-col justify-center items-center">
             <Item item={item1} />
             <Item item={item2} />
