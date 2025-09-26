@@ -9,7 +9,7 @@ export default function Page() {
     return (
         <main>
             <h1>Shopping List</h1>
-            <Dog item={item1} />
+            <Item item={item1} />
         </main>
     );
 }
