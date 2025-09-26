@@ -75,7 +75,7 @@ const item12 = {
 
 return (
     <main>
-        <div className="child-element w-full flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center">
             <Item item={item1} />
             <Item item={item2} />
             <Item item={item3} />
