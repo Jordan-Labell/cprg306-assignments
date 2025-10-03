@@ -1,10 +1,11 @@
 import NewItem from "./new-item";
+
 export default function Page() {
     return (
-        <main>
-            <body className = "bg-black">
+        <main className="bg-black h-dvh">
+            <div className="flex flex-col justify-center items-center">
                 <NewItem />
-            </body>
+            </div>
         </main>
     );
 }
