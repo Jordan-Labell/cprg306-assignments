@@ -2,7 +2,9 @@ import NewItem from "./new-item";
 export default function Page() {
     return (
         <main>
-            <NewItem />
+            <body className = "bg-black">
+                <NewItem />
+            </body>
         </main>
     );
 }
