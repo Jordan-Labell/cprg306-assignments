@@ -1,14 +1,18 @@
 import Link from "next/link";
+import weeks from "./weeks.json";
 
 export default function Page() {
   return (
     <main>
       <h1 className="font-bold text-4xl">CPRG 306: Web Development 2 - Assignments</h1>
       <ul>
-        <li><Link href="/week-2">Week 2 Assignment</Link></li>
-        <li><Link href="/week-3">Week 3 Assignment</Link></li>
-        <li><Link href="/week-4">Week 4 Assignment</Link></li>
-        <li><Link href="/week-5">Week 5 Assignment</Link></li>
+        {
+          weeks.map((week) => (
+            <li key={week.number}>
+              <Link href={`/week-${week.number}`}>Week {week.number} Assignment</Link>
+            </li>
+          ))
+        }
       </ul>
     </main>
   );
