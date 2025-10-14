@@ -4,7 +4,7 @@ import Item from './item';
 import itemsList from './items.json';
 
 export default function ItemList() { 
-    const [sortBy, setSortBy] = useState("category");
+    const [sortBy, setSortBy] = useState("name");
     let itemsListCopy = [...itemsList];
 
       itemsListCopy.sort((item1, item2) => {
