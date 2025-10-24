@@ -1,11 +1,10 @@
 "use client";
 import { useState } from 'react';
 import Item from './item';
-import itemsList from './items.json';
 
-export default function ItemList() { 
+export default function ItemList({items}) { 
     const [sortBy, setSortBy] = useState("name");
-    let itemsListCopy = [...itemsList];
+    let itemsListCopy = [...items];
 
       itemsListCopy.sort((item1, item2) => {
       if (sortBy === "name") {
@@ -34,10 +33,6 @@ return (
                 className={`text-white font-bold py-2 px-4 rounded cursor-pointer ${sortBy == "category" ? 'bg-blue-700' : 'bg-slate-500'}`}>
                 Sort by Category
               </button>
-              {/* <button 
-                className={`text-white font-bold py-2 px-4 rounded cursor-pointer ${sortBy == "groupCategory" ? 'bg-blue-700' : 'bg-slate-500'}`}>
-                Group by Category
-              </button> */}
             </div>
           </li>
           <li>
