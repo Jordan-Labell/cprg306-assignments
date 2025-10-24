@@ -34,7 +34,7 @@ return (
                 className={`text-white font-bold py-2 px-4 rounded cursor-pointer ${sortBy == "category" ? 'bg-blue-700' : 'bg-slate-500'}`}>
                 Sort by Category
               </button>
-              {/* <button 
+            {/*  <button 
                 className={`text-white font-bold py-2 px-4 rounded cursor-pointer ${sortBy == "groupCategory" ? 'bg-blue-700' : 'bg-slate-500'}`}>
                 Group by Category
               </button> */}
