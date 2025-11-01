@@ -9,7 +9,7 @@ export default function MealIdeas(ingredient) {
     const [meals, setMeals] = useState([]);
 
     async function fetchMealIdeas(ingredient) {
-        console.log(ingredient.ingredient);
+      if (!ingredient.ingredient) return [];
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.ingredient}`)
         const data = await response.json();
         return data.meals;

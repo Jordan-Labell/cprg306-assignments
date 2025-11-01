@@ -37,7 +37,7 @@ return (
           </li>
           <li>
             {itemsListCopy.map((item) => (
-                <Item key={item.id} item={item} onSelect={onItemSelect}/>
+                <Item key={item.id} item={item} onSelect={() => onItemSelect(item)}/>
             ))}
           </li>
         </ul>
